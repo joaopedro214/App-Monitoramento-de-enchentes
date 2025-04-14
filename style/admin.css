@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #d9f3f4, #c7e6ed);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: #006064;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-buttons a,
+.header-buttons button {
+  text-decoration: none;
+  padding: 10px 16px;
+  margin-left: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.header-buttons a {
+  background: #00796b;
+  color: white;
+}
+
+.header-buttons button {
+  background: #c62828;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button.adicionar {
+  background: #00796b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+button.adicionar:hover {
+  background: #004d40;
+  transform: scale(1.02);
+}
+
+table {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #006064;
+  color: white;
+  font-weight: bold;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}

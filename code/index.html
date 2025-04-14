@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monitoramento de Enchentes</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/index.css"/>
+  <script src="/code/js/index.js"></script>
+</head>
+<body>
+  <div class="app">
+    <h2>🌧️ Sistema de Monitoramento de Enchentes</h2>
+    <div class="bairro-box">
+      <h3>Selecione sua cidade e bairro</h3>
+      <select id="cidade">
+        <option value="">Selecione uma cidade</option>
+        <option value="Cidade A">Cidade A</option>
+        <option value="Cidade B">Cidade B</option>
+      </select>
+      <select id="bairro">
+        <option value="">Selecione um bairro</option>
+      </select>
+      <button id="consultar">Consultar</button>
+    </div>
+    <div class="result" id="resultado"></div>
+    <canvas id="graficoChuva" width="400" height="200" style="display: none;"></canvas>
+  </div>
+
+  <footer>
+    Desenvolvido por <strong>Patrick Radaelli & João Pedro Gonzatti</strong> - ADS
+  </footer>
+</body>
+</html>
