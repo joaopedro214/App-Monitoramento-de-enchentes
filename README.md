@@ -1,4 +1,6 @@
-# App de Monitoramento de Enchentes
+# App de Monitoramento de Enchentes 
+
+**Em desenvolvimento.**
 
 ## Descrição do Projeto
 O **App de Monitoramento de Enchentes** é uma iniciativa desenvolvida a partir da atividade extensionista da faculdade de ADS, com o objetivo de mitigar os impactos das enchentes na bacia do Taquari, com foco no âmbito municipal. O projeto combina tecnologia avançada e envolvimento comunitário para fornecer alertas em tempo real, melhorar a segurança da população e proteger o ambiente local.
@@ -36,7 +38,7 @@ O projeto utiliza sensores instalados em locais estratégicos para coletar dados
 O projeto destaca a importância da integração entre tecnologia e comunidade para enfrentar desafios ambientais. Os aprendizados incluem a necessidade de adaptação contínua dos sistemas, superação de desafios técnicos e logísticos, e o impacto positivo do envolvimento comunitário.
 
 ## Licença
-Este projeto é licenciado sob a [Licença MIT](LICENCE).
+Este projeto é licenciado sob a [Licença Proprietária](LICENCE).
 
 ---
 
