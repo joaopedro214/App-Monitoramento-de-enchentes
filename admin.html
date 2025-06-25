@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="/style/admin.css"/>
-  <script src="/code/js/admin.js"></script>
+  <link rel="stylesheet" href="css/admin.css"/>
+  <script src="js/admin.js"></script>
   <title>Painel do Administrador</title>
 </head>
 <body>
@@ -30,10 +30,15 @@
 
       <div class="form-group">
         <label for="nivel">Nível Inicial de Inundação (m):</label>
-        <input type="number" id="nivel" min="0" max="5" step="0.01" />
+        <input type="text" id="nivel" placeholder="Ex: 2.5" />
       </div>
 
       <button class="adicionar" onclick="adicionarBairro()">Adicionar Bairro</button>
+    </div>
+
+    <div class="admin-controls">
+      <button class="btn-secondary" onclick="exportarDados()">📥 Exportar Dados</button>
+      <button class="btn-danger" onclick="limparTodosDados()">🗑️ Limpar Todos os Dados</button>
     </div>
 
     <table id="tabela">
@@ -45,36 +50,14 @@
         </tr>
       </thead>
       <tbody>
-        <!-- Dados serão adicionados aqui -->
+        <!-- Dados serão carregados dinamicamente -->
       </tbody>
     </table>
   </div>
 
   <script>
-    function adicionarBairro() {
-      const cidade = document.getElementById("cidade").value.trim();
-      const bairro = document.getElementById("bairro").value.trim();
-      const nivel = document.getElementById("nivel").value;
-
-      if (cidade === "" || bairro === "" || nivel === "") {
-        alert("Preencha todos os campos.");
-        return;
-      }
-
-      const tabela = document.getElementById("tabela").getElementsByTagName("tbody")[0];
-      const novaLinha = tabela.insertRow();
-
-      novaLinha.insertCell(0).textContent = cidade;
-      novaLinha.insertCell(1).textContent = bairro;
-      novaLinha.insertCell(2).textContent = `${parseFloat(nivel).toFixed(2)} m`;
-
-      // Limpa os campos
-      document.getElementById("bairro").value = "";
-      document.getElementById("nivel").value = "";
-    }
-
     function logout() {
-      window.location.href = "loginCadastro.html";
+      window.location.href = "sing-up.html";
     }
   </script>
 </body>

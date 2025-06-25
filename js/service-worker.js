@@ -1,14 +1,15 @@
 const CACHE_NAME = "app-cache-v1";
 const urlsToCache = [
-    "/code/html/index.html",
-    "/code/html/admin.html",
-    "/code/html/sing-up.html",
-    "/code/css/index.css",
-    "/code/css/admin.css",
-    "/code/css/cadastroLogin.css",
-    "/code/js/index.js",
-    "/code/js/admin.js",
-    "/code/js/sing-up.js",
+    "/",
+    "/index.html",
+    "/admin.html",
+    "/sing-up.html",
+    "/css/index.css",
+    "/css/admin.css",
+    "/css/cadastroLogin.css",
+    "/js/index.js",
+    "/js/admin.js",
+    "/js/sing-up.js",
     "/manifest.json",
     "https://code.jquery.com/jquery-3.6.4.min.js",
     "https://cdn.jsdelivr.net/npm/chart.js",
@@ -56,11 +57,11 @@ self.addEventListener("push", event => {
     const title = data.title || "Alerta de Enchente";
     const options = {
         body: data.body || "Nível do rio está acima do limite seguro. Evite áreas de risco!",
-        icon: "/icons/icon-192x192.png",
-        badge: "/icons/icon-192x192.png",
+        icon: "icons/icon-app-192x192.png",
+        badge: "icons/icon-app-192x192.png",
         vibrate: [200, 100, 200],
         data: {
-            url: "/code/html/index.html"
+            url: "/"
         }
     };
 
