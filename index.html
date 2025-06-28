@@ -17,12 +17,17 @@
   <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-app-192x192.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-app-192x192.png">
   
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css"/>
-  <script src="js/index.js"></script>
+ 
 </head>
+<header class="d-none admin">
+  <div class="header-buttons">
+      <a href="admin.html">Admin</a>
+      <p id="usuario"></p>
+  </div>
+</header>
 <body>
   <div class="app">
     <h2>🌧️ Sistema de Monitoramento de Enchentes</h2>
@@ -81,5 +86,8 @@
       console.log('PWA instalado com sucesso');
     });
   </script>
+  <script src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>

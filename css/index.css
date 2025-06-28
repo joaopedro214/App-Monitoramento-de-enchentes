@@ -10,6 +10,43 @@ body {
     color: #333;
 }
 
+header {
+  width: 100%;
+  background-color: #006064;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-buttons a,
+.header-buttons button {
+  text-decoration: none;
+  padding: 10px 16px;
+  margin-left: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.header-buttons a {
+  background: #00796b;
+  color: white;
+}
+
+.header-buttons button {
+  background: #c62828;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 .app {
     background: #ffffff;
     margin: 50px auto;
