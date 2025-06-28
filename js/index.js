@@ -1,5 +1,3 @@
-src="https://code.jquery.com/jquery-3.6.4.min.js"
-src="https://cdn.jsdelivr.net/npm/chart.js"
 let grafico;
 
 /* const bairrosPorCidade = {
@@ -218,8 +216,8 @@ function atualizarDadosEmTempoReal() {
 $(document).ready(function () {
     const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
     if (!usuarioLogado) {
-        // Se não fez cadastro, redireciona para sign-up.html
-        window.location.href = "sign-up.html";
+        // Se não fez cadastro, redireciona para sing-up.html
+        window.location.href = "sing-up.html";
     } else {
         // Se já fez cadastro, pode continuar na index.html normalmente
         console.log("Usuário já cadastrado, pode continuar aqui.");
